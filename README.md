@@ -1,7 +1,7 @@
 # odmetry_lab
 ## test description : wheel odometry vs imu(angular Vel) + wheel(linear Vel) odometry accuracy test.
 
-after donation robot, wheel odometry so weak about slip. 
+after donation robot, i realized wheel odometry so weak about slip. 
 especially, slip about rotation was so fatal.
 
 in this case, I'll compare with wheel odom and imu + wheel odometry 
