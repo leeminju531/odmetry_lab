@@ -1,0 +1,30 @@
+ <launch>
+
+ 	
+    <!--release comment when you wanna check only wheel odom -->
+ 	<!-- 
+ 	<node pkg="lab_odom" type="temporary_motor_node" name="temporary_motor_node" />
+ 	
+    <node pkg="lab_odom" type="wheel_odom_node" name="wheel_odom_node" />-->
+
+    
+
+    <!--release comment when you wanna check imu + wheel odom -->
+
+    <!-- your motor node -->
+ 	<node pkg="lab_odom" type="temporary_motor_node" name="temporary_motor_node" />
+    <!-- your imu node -->
+    <node pkg="mpu6050_serial_to_imu" type="mpu6050_serial_to_imu_node" name="mpu6050_serial_to_imu_node" required="true">
+    <param name="port" value="/dev/ttyACM0"/>
+  	</node> 
+    <!-- imu + wheel odom node -->
+	<node pkg="lab_odom" type="imu_wheel_odom_node" name="imu_wheel_odom_node" /> -->
+    
+
+
+
+
+	<!-- rviz setting -->
+    <node pkg="rviz" type="rviz" name="rviz" args = "-d $(find lab_odom)/launch/odom_base.rviz" />
+
+ </launch>
