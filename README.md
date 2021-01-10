@@ -7,11 +7,15 @@ especially, slip about rotation was so fatal.
 in this case, I'll compare with wheel odom and imu + wheel odometry 
 
 i checked imu acceleration have so much drift 
-so, in my case, imu only correct orientation information (wheel linear velocity + imu angular velocity)
 
-and IMU orientation have a little dritf bcuz graivity (In my opinion..)
+and IMU angular Velocity have a little dritf bcuz MEMS imu, graivity .. etc 
 
-so, if IMU have a little drivt error , took only wheel odometry !
+( IMU at my demo robot is MPU6050 very cheep and MEMS, and IMU hardware complete not fixed )
+
+
+so, in my case, imu only correct angular Velocity information (wheel linear velocity + imu angular velocity)
+
+and, if IMU have a little drivt error , took only wheel odometry !
 
 ## experiment result
 
