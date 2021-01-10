@@ -15,7 +15,7 @@ and IMU angular Velocity have a little dritf bcuz MEMS imu, graivity .. etc
 
 so, in my case, imu only correct angular Velocity information (wheel linear velocity + imu angular velocity)
 
-and, if IMU have a little drivt error , took only wheel odometry !
+and, if IMU have a little drift error , took only wheel odometry !
 
 ## experiment result
 
