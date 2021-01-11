@@ -24,4 +24,4 @@ and, if IMU have a little drift error , took only wheel odometry !
  
  nevertheless, slip due to linear vel ,yet, is weak.
 
- next time, if i got nice IMU sensor i wanna check IMU + wheel odometry sensor fusion accuracy 
+ next time, if i got a nice IMU sensor, i wanna check IMU + wheel odometry sensor fusion accuracy 
